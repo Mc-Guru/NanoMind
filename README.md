@@ -6,13 +6,13 @@
 
 ## Lancement
 
-Pour ouvrir ce projet, installez les fichiers, ouvrez le dans un ide avec un environement python prédéfinis, puis entrez cette commande :
+Pour ouvrir ce projet, installez les fichiers, ouvrez le dans un IDE avec un environement python déja définis, puis entrez cette commande :
 
 ```bash
   python train.py
 ```
 
-Après avoir fait cette commande, un fucguer chatbot_model.h5 sera généré, c'est votre ia, ensuite, pour l'ouvrir il faut executer cette commande : 
+Après avoir fait cette commande, un fichier chatbot_model.h5 sera généré, c'est votre ia, ensuite, pour l'ouvrir il faut executer cette commande : 
 
 ```bash
   python load.py
