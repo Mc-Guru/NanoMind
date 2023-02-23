@@ -6,7 +6,7 @@
 
 ## Lancement
 
-Pour ouvrir ce projet, installez les fichiers, ouvrez le dans un IDE avec un environement python déja définis, puis entrez cette commande :
+Pour ouvrir ce projet, installez les fichiers, ouvrez les dans un IDE avec un environement python déja définis, puis entrez cette commande :
 
 ```bash
   python train.py
