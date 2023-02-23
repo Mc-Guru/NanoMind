@@ -49,3 +49,9 @@ Bot : Salut ! Comment puis-je t'aider ? (0.9999001)
 
 le nombre entre parenthèse se trouve entre 0 et 1.
 N'hésitez pas à fork ce projet et y ajouter vos propres intents.json !
+
+
+
+## Dernières mises à jour
+
+Les prochaines mises à jours apparaîteront ici !
