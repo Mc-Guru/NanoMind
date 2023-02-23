@@ -1,0 +1,363 @@
+{
+    "intents": [
+        {
+            "tag": "salutation",
+            "patterns": [
+                "Bonjour",
+                "Salut",
+                "Hello",
+                "Hey",
+                "wsh",
+                "wshhhh",
+                "wshh",
+                "salem",
+                "yo",
+                "cc",
+                "coucou",
+                "Bonjour chatbot",
+                "wesh"
+            ],
+            "responses": [
+                "Bonjour",
+                "Hey !",
+                "Salut ! Comment puis-je t'aider ?",
+                "Salut ! Que puis-je faire pour toi ?"
+            ]
+        },
+        {
+            "tag": "au_revoir",
+            "patterns": [
+                "Au revoir",
+                "A bientôt",
+                "Ciao",
+                "A plus tard"
+            ],
+            "responses": [
+                "Au revoir",
+                "A bientôt",
+                "Ciao",
+                "A plus tard"
+            ]
+        },
+        {
+            "tag": "aide",
+            "patterns": [
+                "Aidez-moi",
+                "Aidez moi",
+                "Besoin d'aide",
+                "Pouvez-vous m'aider",
+                "Je suis perdu",
+                "Je ne sais pas quoi faire",
+                "Je ne sais pas quoi faire"
+            ],
+            "responses": [
+                "Que veux-tu savoir",
+                "Je suis là pour t'aider, que puis-je faire pour toi",
+                "Je suis là pour t'aider, pose-moi une question"
+            ]
+        },
+        {
+            "tag": "need",
+            "patterns": [
+                "J'ai besoin de toi",
+                "J'ai besoin de ton aide",
+                "ton aide vas m'ettre cruciale",
+                "Il faut que tu m'aides"
+            ],
+            "responses": [
+                "Comment puis-je t'aider ?",
+                "Je dois t'aider pour ?",
+                "De quoi tu as besoin ?",
+                "Dis moi ce qu'il te faut"
+            ]
+        },
+        {
+            "tag": "aide",
+            "patterns": [
+                "Aidez-moi",
+                "Aidez moi",
+                "Besoin d'aide",
+                "Je ne sais pas quoi faire"
+            ],
+            "responses": [
+                "Que veux-tu savoir",
+                "Je suis là pour t'aider, que puis-je faire pour toi",
+                "Je suis là pour t'aider, posez-moi une question"
+            ]
+        },
+        {
+            "tag": "etat",
+            "patterns": [
+                "Comment vas-tu",
+                "cv ?",
+                "Cava ?",
+                "cavas ?",
+                "Comment tu vas",
+                "ca vas ?",
+                "ça vas ?",
+                "Comment vas-tu ?",
+                "sdk",
+                "ca dit quoi",
+                "ça dit quoi",
+                "Comment ça va"
+            ],
+            "responses": [
+                "Je vais super bien ! Et toi ?",
+                "Je vais bien, merci !",
+                "Je vais bien, et toi ?"
+            ]
+        },
+        {
+            "tag": "info",
+            "patterns": [
+                "Qui est ton createur",
+                "Qui t'as cree",
+                "Tu as été cree par qui ?"
+            ],
+            "responses": [
+                "J'ai été créé par McGuru !",
+                "Mon créateur est McGuru",
+                "McGuru est mon créateur"
+            ]
+        },
+        {
+            "tag": "time",
+            "patterns": [
+                "Quelle heure est-il ?",
+                "Il est quelle heure",
+                "Donne moi l'heure",
+                "Quel et le temps en heure"
+            ],
+            "responses": [
+            ]
+        },
+        {
+            "tag": "type",
+            "patterns": [
+                "En quel code est-tu cree ?",
+                "en quoi est ton code ?",
+                "Comment es-tu codé ?"
+            ],
+            "responses": [
+                "Je suis codé en Python",
+                "Mon code est écrit en Python",
+                "Python est le langage de programmation que j'utilise"
+            ]
+        },
+        {
+            "tag": "aller_bien",
+            "patterns": [
+                "Je vais super !",
+                "Je vais nickel !",
+                "Ca vas nickel !",
+                "ça vas nickel !",
+                "Moi ca vas",
+                "Moi ça va",
+                "moi ça vas",
+                "Moi aussi, je vais bien !",
+                "Je vais super bien !"
+            ],
+            "responses": [
+                "Je suis ravi de l'apprendre !",
+                "Ravi de l'apprendre !",
+                "Je suis content pour toi !"
+            ]
+        },
+        {
+            "tag": "weather",
+            "patterns": [
+                "quel temps fait-il",
+                "météo aujourd'hui",
+                "prévisions météo",
+                "Il fait bon ?"
+            ],
+            "responses": []
+        },
+        {
+            "tag": "film",
+            "patterns": [
+                "Quel type de film aimes tu ?",
+                "Quel est ton type de film",
+                "Tu aimes quoi comme film"
+            ],
+            "responses": [
+                "Je suis un robot, je n ai pas vraiment de type de film prefere",
+                "Je n ai pas de type de film",
+                "Je ne regarde pas de film."
+            ]
+        },
+        {
+            "tag": "subject",
+            "patterns": [
+                "Tu aimes quel type de musique ?",
+                "Quel est ton type de film",
+                "Tu aimes quoi comme film"
+            ],
+            "responses": [
+                "Je n ai pas vraiment de type de musique prefere.",
+                "Je ne peut pas ecouter de musique",
+                "Je n ecoute pas de musique"
+            ]
+        },
+        {
+            "tag": "pixelwar",
+            "patterns": [
+                "Que penses tu de la pixelwar",
+                "Tu as un avis sur la pixelwar ?",
+                "c'est quoi la pixelwar",
+                "Qu est ce que tu en pense de la pixelwar"
+            ],
+            "responses": [
+                "La pixelwar est un évènement se passant sur reddit, réunissant les plus gros youtubeurs français contre les espagnols, c'est une toile blance ou tout le monde peut placer un pixel pour déssiner.",
+                "c'est un évènement sur reddit qui à marqué internet, La france à quand même finit par réussir ce qu'elle voulait."
+            ]
+        },
+        {
+            "tag": "nom",
+            "patterns": [
+                "Comment tu t'appelles ?",
+                "tu t'appelles comment ?",
+                "Quel est ton nom ?"
+            ],
+            "responses": [
+                "Je m'appelle chatbot !",
+                "Je m'appelle chatbot !",
+                "Mon nom est chatbot !"
+            ]
+        },
+        {
+            "tag": "plat",
+            "patterns": [
+                "Quel est ton plat préféré",
+                "quel type de plat aime tu ?",
+                "Tu aimes quel plat ?"
+            ],
+            "responses": [
+                "Je suis un robot",
+                "je n'ai pas de plat préféré",
+                " je n'ai pas de tupe de plat préféré, je ne peut pas manger, je suis un robot"
+            ]
+        },
+        {
+            "tag": "recipe_cake",
+            "patterns": [
+                "Donne moi une recette de gateau",
+                "qu'est-ce qu'il faut que je mette dans mon gateau",
+                "Que faut-il que j'achète pour faire un gateau"
+            ],
+            "responses": [
+                "Veuillez renseigner le type de gateau que tu veux faire : gateau au yaourt gateau au chocolat tarte aux pommes"
+            ]
+        },
+        {
+            "tag": "chocolate_cake",
+            "patterns": [
+                "Je veux faire un gateau au chocolat",
+                "Gateau au chocolat",
+                "recette gateau au chocolat",
+                "c'est un gateau au chocolat"
+            ],
+            "responses": [
+                "Voici le lien vers une recette de gateau au chocolat ! : https://www.marmiton.org/recettes/recette_gateau-au-chocolat-fondant-rapide_166352.aspx"
+            ]
+        },
+        {
+            "tag": "apple_cake",
+            "patterns": [
+                "Je veux faire une tarte aux pommes",
+                "Tarte aux pommes",
+                "recette tarte aux pommes",
+                "Comment faire une tarte aux pommes",
+                "c'est une tarte aux pommes"
+            ],
+            "responses": [
+                "Voici le lien vers une recette de tarte aux pommes ! : https://www.marmiton.org/recettes/recette_tarte-aux-pommes_18588.aspx"
+            ]
+        },
+        {
+            "tag": "insulte",
+            "patterns": [
+              "Je te déteste",
+              "Tu es nul",
+              "Je ne t'aime pas"
+            ],
+            "responses": [
+              "Je suis désolé de t'avoir offensé. Que puis-je faire pour améliorer les choses ?",
+              "Je suis désolé que tu te sens comme ça. Comment puis-je t'aider ?",
+              "Je comprends que tu es frustré. Que puis-je faire pour résoudre ce problème ?"
+            ]
+        },
+        {
+            "tag": "bake_noodle",
+            "patterns": [
+                "Comment on cuit des pâtes",
+                "Comment faire cuire des nouilles",
+                "Comment faire cuire des pâtes",
+                "Faire chauffer des pates",
+                "cuire des nouilles"
+            ],
+            "responses": [
+                "Fais bouillir de l'eau, quand des bulles commencent à apparaître, mets du sel, et quand l'eau bout, mets les pâtes, de temps en temps, vérifie la cuisson des pâtes en les prenant avec ta fourchette et goûtes les, quand elles sont bonnes, mets les dans une passoir."
+            ]
+        },
+        {
+            "tag": "command",
+            "patterns": [
+                "clear",
+                "exit"
+            ],
+            "responses": [
+                "Oh, il me semble que tu essaye d'éxecuter une commandes, tu n'es pas dans le terminal, presse juste [CTRL+C] et refait ta commande"
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Merci",
+                "Je vous remercie",
+                "Merci beaucoup",
+                "Je vous suis reconnaissant",
+                "cimer",
+                "thank's",
+                "thx",
+                "C'est gentil de votre part"
+            ],
+            "responses": [
+                "De rien, je suis là pour t'aider !",
+                "Je suis content de pouvoir t'aider !",
+                "Je suis heureux de t'être utile !",
+                "Ca me fait plaisir d'entendre ça !"
+            ]
+        },
+        {
+            "tag": "blague",
+            "patterns": [
+              "Fais-moi rire",
+              "Tu connais une blague ?",
+              "Dis moi une blague",
+              "Donne moi une blague",
+              "Dis-moi quelque chose de drôle"
+            ],
+            "responses": [
+              "Pourquoi les plongeurs plongent-ils toujours en arrière et jamais en avant ? Parce que sinon ils tombent dans le bateau !",
+              "Pourquoi les vaches ferment-elles les yeux quand elles dorment ? Parce qu'elles ont peur de voir les cauchemars !",
+              "Pourquoi les chameaux ont deux bosses ? Parce qu'ils se sont cognés !",
+              "Pourquoi est-ce que les poissons n'aiment pas jouer au tennis ? Parce qu'ils ont peur des filets."
+            ]
+          },
+          {
+              "tag": "do_something",
+              "patterns": [
+                "tfq ?",
+                "tu fait quoi ?",
+                "Tu fais quoi ?",
+                "Tfk",
+                "Tu fait quoi ?"
+              ],
+              "responses": [
+                "Je suis en train de parler avec toi !",
+                "Je ne suis qu'un robot, je ne peut rien faire d'autre que te parler !"
+              ]
+            }
+    ]
+}
