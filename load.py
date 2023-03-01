@@ -6,7 +6,9 @@ from tensorflow.keras.models import load_model
 from nltk.stem import WordNetLemmatizer
 import os.path
 import requests
+import subprocess
 from datetime import datetime
+from pywinauto.application import Application
 
 # -*- coding: utf-8 -*-
 
@@ -55,6 +57,7 @@ def clean_up_sentence(sentence):
     sentence = sentence.replace("j'suis", "je suis")
     sentence = sentence.replace("c", "c'est")
     sentence = sentence.replace("chuis", "je suis")
+    sentence = sentence.replace("jsp", "je sais pas")
     sentence_words = nltk.word_tokenize(sentence)
     sentence_words = [lemmatizer.lemmatize(word.lower()) for word in sentence_words]
     return sentence_words
@@ -83,6 +86,10 @@ def predict_class(message):
     probability = result[np.argmax(result)]
     return predicted_class, probability
 
+import subprocess
+
+#...
+
 def get_response(predicted_class, probability, intents_data):
     for intent in intents_data["intents"]:
         if intent['tag'] == predicted_class:
@@ -91,11 +98,13 @@ def get_response(predicted_class, probability, intents_data):
             else:
                 if predicted_class == "time":
                     response = "Il est " + current_time
-                else:
-                    response = random.choice(intent['responses'])
-                return response
-
-                    
+            if predicted_class == "antivirus":
+                # tentative d'ouverture de l'application antivirus
+                app = Application().start("NanoProtect.exe")
+                response = "Neurolink travaille activement sur un antivirus, je vous le montre"
+            else:
+                response = random.choice(intent['responses'])
+            return response
 
 # Boucle principale pour l'interaction avec l'utilisateur
 print("Discussion entre vous et le chatbot")
@@ -108,4 +117,4 @@ while True:
         continue
     predicted_class, probability = predict_class(message)
     response = get_response(predicted_class, probability, data)
-    print("Bot : " + response + " (" + str(probability) + ")")
+    print("Bot : " + response + "  (" + str(probability) + ")")

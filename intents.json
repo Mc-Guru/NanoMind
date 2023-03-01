@@ -8,8 +8,6 @@
                 "Hello",
                 "Hey",
                 "wsh",
-                "wshhhh",
-                "wshh",
                 "salem",
                 "yo",
                 "cc",
@@ -22,6 +20,17 @@
                 "Hey !",
                 "Salut ! Comment puis-je t'aider ?",
                 "Salut ! Que puis-je faire pour toi ?"
+            ]
+        },
+        {
+            "tag": "antivirus",
+            "patterns": [
+              "ouvre l'antivirus",
+              "analyse ce fichier",
+              "Vérifie ce fichier",
+              "ce fichier est sécurisé ?"
+            ],
+            "responses": [
             ]
         },
         {
@@ -40,6 +49,30 @@
             ]
         },
         {
+            "tag": "antivirus",
+            "patterns": [
+              "ouvre l'antivirus",
+              "analyse ce fichier",
+              "Vérifie ce fichier",
+              "Tu me conseilles quel antivirus ?",
+              "ce fichier est sécurisé ?"
+            ],
+            "responses": [
+            ]
+        },
+        {
+            "tag": "Free_games",
+            "patterns": [
+                "Tu sais ou je pourrais avoir des jeux gratuits ?",
+                "Free games",
+                "Jeux gratuits",
+                "Donne moi des jeux gratuits"
+            ],
+            "responses": [
+                "Je te conseille bye-pay ! un très bon servur discord de crack, ils ont même leur propre site, voici l'url : https://bye-pay.cf"
+            ]
+        },
+        {
             "tag": "aide",
             "patterns": [
                 "Aidez-moi",
@@ -47,6 +80,7 @@
                 "Besoin d'aide",
                 "Pouvez-vous m'aider",
                 "Je suis perdu",
+                "Je sais pas quoi faire",
                 "Je ne sais pas quoi faire",
                 "Je ne sais pas quoi faire"
             ],
@@ -152,6 +186,8 @@
                 "Ca vas nickel !",
                 "ça vas nickel !",
                 "Moi ca vas",
+                "Super !",
+                "Parfait",
                 "Moi ça va",
                 "moi ça vas",
                 "Moi aussi, je vais bien !",
@@ -189,12 +225,14 @@
         {
             "tag": "subject",
             "patterns": [
+                "Quel est ton style de musique préférée ?",
+                "Tu aimes quel style de musique ?",
                 "Tu aimes quel type de musique ?",
                 "Quel est ton type de film",
                 "Tu aimes quoi comme film"
             ],
             "responses": [
-                "Je n ai pas vraiment de type de musique prefere.",
+                "Je n ai pas vraiment de type de musique preférée.",
                 "Je ne peut pas ecouter de musique",
                 "Je n ecoute pas de musique"
             ]
@@ -213,6 +251,18 @@
             ]
         },
         {
+            "tag": "affirmation",
+            "patterns": [
+                "Oui",
+                "Non",
+                "D'accord",
+                "Ok"
+            ],
+            "responses": [
+                "Il me semble que tu essayes de répondre à mon ancien message, je n'ai pas encore l'opportunité de voir l'historique des messages !"
+            ]
+        },
+        {
             "tag": "nom",
             "patterns": [
                 "Comment tu t'appelles ?",
@@ -220,7 +270,6 @@
                 "Quel est ton nom ?"
             ],
             "responses": [
-                "Je m'appelle chatbot !",
                 "Je m'appelle chatbot !",
                 "Mon nom est chatbot !"
             ]
@@ -277,6 +326,9 @@
         {
             "tag": "insulte",
             "patterns": [
+                "tg",
+                "connard",
+                "salope",
               "Je te déteste",
               "Tu es nul",
               "Je ne t'aime pas"
@@ -358,6 +410,104 @@
                 "Je suis en train de parler avec toi !",
                 "Je ne suis qu'un robot, je ne peut rien faire d'autre que te parler !"
               ]
+            },
+            {
+                "tag": "indecision",
+                "patterns": [
+                    "Je ne sais pas quoi faire",
+                    "Je m'ennuie",
+                    "Qu'est-ce que je peux faire",
+                    "Je ne sais pas quoi faire de ma journée",
+                    "Je ne sais pas quoi faire de mon temps libre"
+                ],
+                "responses": [
+                    "As-tu déjà pensé à essayer une nouvelle activité comme apprendre une langue étrangère ou essayer un nouveau hobby ?",
+                    "Trouves un nouveau hobby : essaye quelque chose de nouveau qui t'intéresses, comme la cuisine, la peinture, la danse, ou la lecture.",
+                    "Tu pourrais peut-être regarder un film ou une série, écouter de la musique, lire un livre, ou même faire une promenade pour vous aider à vous vider l'esprit. Qu'en penses-tu ?"
+                ]
+            },
+            {
+                "tag": "error_print",
+                "patterns": [
+                    "Corrige ce code : print(' )",
+                    "ce code ne fonctionne pas : print( )",
+                    "ce code ne fonctionne pas : print' '",
+                    "j'ai une erreur avec ce code : print(' )"
+                ],
+                "responses": [
+                    "J'ai trouvé l'erreur dans ce code ! voici le code corrigé : print('exemple')"
+                ]
+            },
+            {
+                "tag": "no_error_print",
+                "patterns": [
+                    "Corrige ce code : print('hello world')",
+                    "ce code ne fonctionne pas : print('hello world')",
+                    "ce code ne fonctionne pas : print('hello world')",
+                    "j'ai une erreur avec ce code : print('test')"
+                ],
+                "responses": [
+                    "Ce code me semble juste !, il affiche une erreure ou un truc du genre ?"
+                ]
+            },
+            {
+                "tag": "error_",
+                "patterns": [
+                    "Corrige ce code : print('hello world)",
+                    "j'ai une erreur avec ce code : print('test)"
+                ],
+                "responses": [
+                    "Il me semble que tu n'ait pas fermé la parenthèse dans le print, voici à quoi devrai ressembler le code : print('exemple')"
+                ]
+            },
+            {
+                "tag": "source_code",
+                "patterns": [
+                    "Donne moi ton code source",
+                    "Ton code est open source ?",
+                    "Quel est ton code source"
+                ],
+                "responses": [
+                    "Si tu lis cela, c'est que tu as déja mon code !"
+                ]
+            },
+            {
+                "tag": "program_language",
+                "patterns": [
+                    "Par quel language de programmation je pourrais commencer ?",
+                    "Quel code je devrais apprendre ?",
+                    "Il faut apprendre quel code en premier ?"
+                ],
+                "responses": [
+                    "Je te conseille de démarrer par le python car il est très simple, puis te diriger vers d'autres languages en fonction de ce que tu veux faire, il n'y a pas de language meilleur que d'autre."
+                ]
+            },
+            {
+                "tag": "Virus_info",
+                "patterns": [
+                    "C'est quoi un virus informatique ?",
+                    "Qu'est-ce qu'un virus"
+                ],
+                "responses": [
+                    "Les virus informatiques peuvent être transmis via des e-mails infectés, des sites Web compromis, des périphériques de stockage tels que des clés USB, ou tout autre moyen par lequel les programmes peuvent être transférés d'un ordinateur à un autre.",
+                    "Un virus informatique est un programme malveillant conçu pour se propager d'un ordinateur à un autre en s'attachant à des fichiers ou des programmes existants, et en se reproduisant à leur insu. Les virus informatiques sont souvent conçus pour causer des dommages à des systèmes informatiques, tels que la suppression de fichiers, la corruption de données ou la prise de contrôle de l'ordinateur à des fins malveillantes."
+                ]
+            },
+            {
+                "tag": "Virus_type",
+                "patterns": [
+                    "C'est quoi les types de virus",
+                    "Donne moi des types de virus"
+                ],
+                "responses": [
+                    "Cheval de Troie : Ce type de programme malveillant se cache dans un logiciel légitime et s'active lorsqu'un utilisateur l'exécute, permettant à un pirate informatique d'accéder à l'ordinateur de la victime à distance.",
+                    "Virus furtifs : Ces virus sont conçus pour être difficiles à détecter, en masquant leur présence ou en désactivant les logiciels de sécurité.",
+                    "Virus polymorphes : Ces virus ont la capacité de modifier leur code chaque fois qu'ils se propagent, ce qui les rend plus difficiles à détecter.",
+                    "Virus de script : Ces virus sont écrits en langage de script et se propagent en infectant des fichiers de script tels que des fichiers batch, des fichiers de commandes ou des scripts de shell.",
+                    "Virus de macro : Ces virus sont écrits en langage de macro et se propagent en infectant des documents Microsoft Office tels que Word, Excel ou PowerPoint.",
+                    "Virus de boot : Ces virus infectent les secteurs de démarrage des disques durs et des disquettes, et se chargent lors du démarrage de l'ordinateur.",
+                    "Virus de fichier : Ces virus s'attachent à des fichiers exécutables tels que des programmes ou des scripts et se propagent lorsque ces fichiers sont exécutés."
+                ]
             }
     ]
 }
