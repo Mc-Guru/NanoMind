@@ -39,7 +39,7 @@ Pour lui apprendre plus de phrases, vous pouvez ajouter des questions et des ré
 
 ici, quand on lui dicte un mot qui ressemble à bonjour ou salut, il répondras automatiquement un mot parmis ceux-dessous.
 
-Quand il engage une conversation avec vous, il dis à quel point il est sur de sa réponse, exemple : 
+Quand il engage une conversation avec vous, la sûreté de sa réponse s'affiche à droite de la réponse, exemple : 
 
 ```bash
 Vous: Hey !
