@@ -47,8 +47,10 @@ Vous: Hey !
 Bot : Salut ! Comment puis-je t'aider ? (0.9999001)
 ```
 
-le nombre entre parenthèse se trouve entre 0 et 1.
-N'hésitez pas à fork ce projet et y ajouter vos propres intents.json !
+le nombre entre parenthèse se trouve entre 0 et 1, plus le nombre est proche de 0, moins le chatbot est sûr, et plus il est proche de 1, plus il est sûr de sa réponse.
+
+
+N'hésitez pas à fork ce projet et y ajouter vos propres intents !
 
 
 
